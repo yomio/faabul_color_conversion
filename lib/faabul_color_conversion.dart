@@ -1,3 +1,11 @@
+/// This package is a simple extension to the Color and String classes that add following methods:
+///
+/// on Color:
+/// * `asWebColor()` returns a web color representation, such as #ff4488dd
+///
+/// on String:
+/// * `parseAsColor()` parses a web color representation, such as #ff4488dd, and throws [FormatException] if the format is invalid
+/// * `tryParseAsColor()` parses a web color representation, such as #ff4488dd, and returns `null` if the format is invalid
 library faabul_color_conversion;
 
 import 'dart:ui';
